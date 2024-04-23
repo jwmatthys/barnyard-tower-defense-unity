@@ -6,8 +6,8 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638494831380000000
-    m_Hash: 3794260397
+      ticks: 638494840280000000
+    m_Hash: 2046160078
   m_LockFileStatus:
     m_FilePath: /home/jwmatthys/Unity/barnyard-tower-defense-unity/Barnyard Tower
       Defense/Packages/packages-lock.json
@@ -15,8 +15,8 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638494831380000000
-    m_Hash: 2130645691
+      ticks: 638494840280000000
+    m_Hash: 1790166512
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -260,13 +260,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.textmeshpro@3.0.6
+- packageId: com.unity.textmeshpro@3.0.8
   testable: 0
   isDirectDependency: 1
-  version: 3.0.6
+  version: 3.0.8
   source: 1
   resolvedPath: /home/jwmatthys/Unity/barnyard-tower-defense-unity/Barnyard Tower
-    Defense/Library/PackageCache/com.unity.textmeshpro@3.0.6
+    Defense/Library/PackageCache/com.unity.textmeshpro@3.0.8
   assetPath: Packages/com.unity.textmeshpro
   name: com.unity.textmeshpro
   displayName: TextMeshPro
@@ -275,7 +275,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Text Rendering
-  type: asset
+  type: assets
   description: 'TextMeshPro is the ultimate text solution for Unity. It''s the perfect
     replacement for Unity''s UI Text and the legacy Text Mesh.
 
@@ -436,13 +436,13 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637547111200000000
-  documentationUrl: 
+  datePublishedTicks: 638433339070000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.textmeshpro.git
-    revision: 01e57e3b7de18af9dfe9baaa0a0ff5cc4765c899
+    revision: dd92f03985c9bda38a4721cc146a6b74d2832a1f
     path: 
   unityLifecycle:
     version: 3.0.6
@@ -781,13 +781,13 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.visualscripting@1.9.2
+- packageId: com.unity.visualscripting@1.9.4
   testable: 0
   isDirectDependency: 1
-  version: 1.9.2
+  version: 1.9.4
   source: 1
   resolvedPath: /home/jwmatthys/Unity/barnyard-tower-defense-unity/Barnyard Tower
-    Defense/Library/PackageCache/com.unity.visualscripting@1.9.2
+    Defense/Library/PackageCache/com.unity.visualscripting@1.9.4
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -865,13 +865,13 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638452551610000000
+  datePublishedTicks: 638488567680000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.visualscripting.git
-    revision: 0dd874ef58a75ee4b4df6a81e65230e2602096a3
+    revision: 41aac2b7038c2b1259c546329890d3736ce2394e
     path: 
   unityLifecycle:
     version: 1.9.2
