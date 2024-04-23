@@ -1,18 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Waypoint : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private bool isPlacable;
+    public bool IsPlacable { get { return isPlacable; } }
+    
+    [SerializeField] private GameObject towerPrefab;
+    private void OnMouseDown()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (!isPlacable) return;
+        Instantiate(towerPrefab, transform.position, Quaternion.identity);
+        isPlacable = false;
     }
 }
