@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile_RoadStraight
       objectReference: {fileID: 0}
+    - target: {fileID: 20552725528163845, guid: 845f30c28130b7698a7d93c2d5a7e56a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 2815616245266650917, guid: 845f30c28130b7698a7d93c2d5a7e56a, type: 3}
       propertyPath: isPlacable
       value: 0
@@ -35,6 +39,30 @@ PrefabInstance:
     - target: {fileID: 6791943317302721913, guid: 845f30c28130b7698a7d93c2d5a7e56a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6803545420399465071, guid: 845f30c28130b7698a7d93c2d5a7e56a, type: 3}
+      propertyPath: m_text
+      value: 0,0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6803545420399465071, guid: 845f30c28130b7698a7d93c2d5a7e56a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6803545420399465071, guid: 845f30c28130b7698a7d93c2d5a7e56a, type: 3}
+      propertyPath: m_fontColor.a
+      value: 0.5137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 6803545420399465071, guid: 845f30c28130b7698a7d93c2d5a7e56a, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6803545420399465071, guid: 845f30c28130b7698a7d93c2d5a7e56a, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6803545420399465071, guid: 845f30c28130b7698a7d93c2d5a7e56a, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7615716741216420894, guid: 845f30c28130b7698a7d93c2d5a7e56a, type: 3}
       propertyPath: m_LocalPosition.x
