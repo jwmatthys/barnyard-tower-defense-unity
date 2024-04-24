@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,13 +8,13 @@ public class EnemyMover : MonoBehaviour
     [SerializeField] [Range(0f, 5f)] private float speed = 1f;
     [SerializeField] private List<Waypoint> path = new List<Waypoint>();
 
-    void Start()
+    void OnEnable()
     {
         FindPath();
         ReturnToStart();
         StartCoroutine(FollowPath());
     }
-
+    
     void FindPath()
     {
         path.Clear();
@@ -44,7 +45,7 @@ public class EnemyMover : MonoBehaviour
                 yield return new WaitForEndOfFrame();
             }
         }
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
 }
