@@ -93,6 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7920693802834629084}
   - component: {fileID: 3203844990334040231}
+  - component: {fileID: 3936159104668942250}
   m_Layer: 0
   m_Name: Turret
   m_TagString: Untagged
@@ -131,6 +132,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weapon: {fileID: 7429201728631632817}
   range: 20
+--- !u!114 &3936159104668942250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6301572142275735893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fb2a7382a03e80b091811c615109b81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6420486220625027069
 GameObject:
   m_ObjectHideFlags: 0
