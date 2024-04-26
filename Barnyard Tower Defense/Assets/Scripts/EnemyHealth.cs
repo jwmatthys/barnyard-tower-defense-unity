@@ -7,7 +7,7 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] private int maxHitPoints = 5;
-    private int _currentHitPoints;
+    private int currentHitPoints;
     private Enemy enemy;
 
     private void Start()
@@ -17,7 +17,7 @@ public class EnemyHealth : MonoBehaviour
 
     void OnEnable()
     {
-        _currentHitPoints = maxHitPoints;
+        currentHitPoints = maxHitPoints;
     }
 
     private void OnParticleCollision(GameObject other)
@@ -27,8 +27,8 @@ public class EnemyHealth : MonoBehaviour
 
     private void ProcessHit()
     {
-        _currentHitPoints--;
-        if (_currentHitPoints > 0) return;
+        currentHitPoints--;
+        if (currentHitPoints > 0) return;
         enemy.RewardGold();
         gameObject.SetActive(false);
     }

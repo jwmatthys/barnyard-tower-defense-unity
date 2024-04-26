@@ -6,42 +6,50 @@ using UnityEngine;
 public class EnemyMover : MonoBehaviour
 {
     [SerializeField] [Range(0f, 5f)] private float speed = 1f;
-    [SerializeField] private List<Waypoint> path = new List<Waypoint>();
+    private List<Node> path = new List<Node>();
     private Enemy enemy;
+    private Pathfinder pathfinder;
+    private GridManager gridManager;
 
-    private void Start()
+    private void Awake()
     {
+        gridManager = FindObjectOfType<GridManager>();
+        pathfinder = FindObjectOfType<Pathfinder>();
         enemy = GetComponent<Enemy>();
     }
 
     void OnEnable()
     {
-        FindPath();
         ReturnToStart();
-        StartCoroutine(FollowPath());
+        RecalculatePath(true);
     }
-    
-    void FindPath()
+
+    void RecalculatePath(bool resetPath)
     {
-        path.Clear();
-        GameObject parent = GameObject.FindGameObjectWithTag("Path");
-        foreach (Transform child in parent.transform)
+        Vector2Int coordinates = new Vector2Int();
+        if (resetPath)
         {
-            path.Add(child.GetComponent<Waypoint>());
+            coordinates = pathfinder.StartCoordinates;
         }
+        else coordinates = gridManager.GetCoordinatesFromPosition(transform.position);
+
+        StopAllCoroutines();
+        path.Clear();
+        path = pathfinder.GetNewPath(coordinates);
+        StartCoroutine(FollowPath());
     }
 
     void ReturnToStart()
     {
-        gameObject.transform.position = path[0].transform.position;
+        transform.position = gridManager.GetPositionFromCoordinates(pathfinder.StartCoordinates);
     }
-    
+
     IEnumerator FollowPath()
     {
-        foreach (Waypoint waypoint in path)
+        for (int i = 1; i < path.Count; i++)
         {
             Vector3 startPosition = transform.position;
-            Vector3 endPosition = waypoint.transform.position;
+            Vector3 endPosition = gridManager.GetPositionFromCoordinates(path[i].coordinates);
             float travelPercent = 0f;
             transform.LookAt(endPosition);
             while (travelPercent < 1)
@@ -51,8 +59,8 @@ public class EnemyMover : MonoBehaviour
                 yield return new WaitForEndOfFrame();
             }
         }
+
         enemy.StealGold();
         gameObject.SetActive(false);
     }
-
 }
